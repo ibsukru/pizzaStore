@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Reduce action for state {} and action {"type":"TOPPING_SELECT","payload":{"name":"large"}} 1`] = `Object {}`;
+
+exports[`Reduce action for state {} and action {"type":"TOPPING_SELECT","payload":{"pizza":{"toppings":[{"defaultSelected":false,"topping":{"name":"pepperoni","price":0.4}}]},"topping":{"name":"pepperoni"}}} 1`] = `
+Object {
+  "toppings": Array [
+    Object {
+      "defaultSelected": true,
+      "topping": Object {
+        "name": "pepperoni",
+        "price": 0.4,
+      },
+    },
+  ],
+}
+`;
+
+exports[`Reduce action for state {} and action {"type":"UNKNOWN"} 1`] = `Object {}`;
+
+exports[`Reduce action for state null and action {"type":"TOPPING_SELECT","payload":{"pizza":null,"topping":{"name":"pepperoni"}}} 1`] = `null`;
+
+exports[`Reduce action for state null and action null 1`] = `null`;
+
+exports[`Reduce action for state undefined and action {"type":"CLEAR_ORDER"} 1`] = `null`;
+
+exports[`Reduce action for state undefined and action undefined 1`] = `null`;

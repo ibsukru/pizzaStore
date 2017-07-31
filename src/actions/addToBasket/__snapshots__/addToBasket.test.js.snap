@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Invokes action for payload {"pizza":{"name":"large"}} 1`] = `
+Object {
+  "payload": Object {
+    "pizza": Object {
+      "name": "large",
+    },
+  },
+  "type": "BASKET_ADD",
+}
+`;
+
+exports[`Invokes action for payload {} 1`] = `
+Object {
+  "payload": Object {},
+  "type": "BASKET_ADD",
+}
+`;
