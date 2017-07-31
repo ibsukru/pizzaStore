@@ -8,7 +8,7 @@ const mapDispatchToProps = dispatch => {
       dispatch(pay(basket))
     },
     onRemovingOrder: (index) => {
-      dispatch(removeOrder(index));
+      dispatch(removeOrder(index))
     },
     onToggleBasket: () => {
       dispatch(clearOrder())
