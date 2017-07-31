@@ -9,7 +9,7 @@ const basketReducer = (state = { show: false, orders: [] }, action) => {
     case 'BASKET_REMOVE_ITEM':
       const index = action.payload
       return index >=0 ? Object.assign({ ...state }, {
-        orders: state.orders.filter((order, i) => i != index)
+        orders: state.orders.filter((order, i) => i !== index)
       }) : state
     case 'BASKET_TOGGLE':
       return Object.assign({ ...state }, { show: !state.show })
