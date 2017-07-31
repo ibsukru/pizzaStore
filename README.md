@@ -8,9 +8,8 @@ Pizza store experiment using React, Redux and Graphql
 ## Architecture 🏛
 * All Functional
 * State as single source of truth
-* All components, actions and reducers are stateless
-* Encapsulation and method hiding inside module folders 
-* Testable
+* Encapsulation inside module folders
+* Index files doing heavy job like configuration, decoration and method hiding. This lets all components, actions and reducers stateless and testable
 
 
 ## How to 🤔
