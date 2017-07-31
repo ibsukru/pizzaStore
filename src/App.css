@@ -1,3 +1,7 @@
+a {
+  color: blue;
+  cursor: pointer;
+}
 main {
   max-width: 450px;
   margin: 0 auto;
@@ -47,8 +51,8 @@ main {
 .sizes_size:hover,
 .toppings__topping:hover,
 .toppings__topping--selected {
-  color: #1f8dd6;
-  border-color: #1f8dd6;
+  color: blue;
+  border-color: blue;
 }
 
 .toppings__topping-toggle {

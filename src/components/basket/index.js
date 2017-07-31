@@ -1,10 +1,14 @@
 import Basket from './Basket'
 import { connect } from 'react-redux'
-import { clearOrder, pay, toggleBasket } from '../../actions'
+import { clearOrder, pay, removeOrder, toggleBasket } from '../../actions'
+
 const mapDispatchToProps = dispatch => {
   return {
     onPay: (basket) => {
       dispatch(pay(basket))
+    },
+    onRemovingOrder: (index) => {
+      dispatch(removeOrder(index));
     },
     onToggleBasket: () => {
       dispatch(clearOrder())

@@ -13,7 +13,7 @@ const pizzaReducer = (state = null, action) => {
           return current
         })
       })
-    case 'CLEAR_CLEAR':
+    case 'CLEAR_ORDER':
       return null
     default:
       return state

@@ -1,10 +1,7 @@
 import React from 'react'
-import {
-  getPrice,
-  getTotalPrice
-} from '../../helpers'
+import { getPrice, getTotalPrice } from '../../helpers'
 
-const Basket = ({ basket, onPay, onToggleBasket }) => {
+const Basket = ({ basket, onPay, onToggleBasket, onRemovingOrder }) => {
   if (basket.completed) {
     return (
       <div>
@@ -19,6 +16,17 @@ const Basket = ({ basket, onPay, onToggleBasket }) => {
   }
 
   const { orders } = basket
+
+  if (orders && !orders.length) {
+    return (
+      <div>
+        <h1>
+          Your basket is empty, <a onClick={onToggleBasket}>Here</a> you can add items.
+        </h1>
+      </div>
+    )
+  }
+
   return (
     <div>
       <h1>Hey here is your basket, these things are yummy!</h1>
@@ -31,8 +39,9 @@ const Basket = ({ basket, onPay, onToggleBasket }) => {
                 order.toppings
                   .filter(t => t.defaultSelected)
                   .map(({ topping }) => {
-                    return <span key={topping.name}> {topping.name} </span>
-                  })} toppings costs {getPrice(order).toFixed(2)}$
+                    return <span key={topping.name}> {topping.name}, </span>
+                  })} costs {getPrice(order).toFixed(2)}$,
+              <div><a onClick={() => onRemovingOrder(index)}>Remove</a></div>
             </li>
           )
         })}
