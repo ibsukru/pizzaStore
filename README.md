@@ -1,11 +1,11 @@
 # pizzaStore 🍕 
 React pizza store experiment using Redux and Graphql
 
-# Features 🤘
+## Features 🤘
 * React, Apollo & Graphql setup 
 * Css Modules and Service workers by default
 
-# Architecture 🏛
+## Architecture 🏛
 * State as single source of truth
 * All components actions and reducers are pure functions
 
