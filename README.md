@@ -12,6 +12,8 @@ React pizza store experiment using Redux and Graphql
 
 ## How to 🤔
 
+Please check the source code 
+
 ### Install
 `yarn install`
 
