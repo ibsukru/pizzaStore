@@ -6,9 +6,12 @@ Pizza store experiment using React, Redux and Graphql
 * Css Modules and Service workers by default
 
 ## Architecture 🏛
-* Functional
+* All Functional
 * State as single source of truth
 * All components, actions and reducers are stateless
+* Encapsulation and method hiding inside module folders 
+* Testable
+
 
 ## How to 🤔
 
