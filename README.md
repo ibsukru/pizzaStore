@@ -7,5 +7,5 @@ React pizza store experiment using Redux and Graphql
 ## Start
 `yarn start`
 
-## Buil
-`build`
+## Build
+`yarn build`
