@@ -1,0 +1,61 @@
+main {
+  max-width: 450px;
+  margin: 0 auto;
+}
+
+.sizes,
+.toppings,
+.basket-actions,
+.toppings-actions {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px -10px;
+}
+
+.toppings-actions {
+  flex-direction: column;
+}
+
+.orders {
+  margin: 20px 0;
+}
+
+.orders__order {
+  margin-bottom: 20px;
+}
+
+.sizes__size,
+.toppings__topping,
+.basket-actions__pay,
+.basket-actions__toggle,
+.toppings-actions__add-to-basket,
+.toppings-actions__clear {
+  cursor: pointer;
+  flex: 1;
+  text-align: center;
+  color: #111;
+  display: inline-block;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin: 5px;
+}
+
+.order-completed__toggle {
+  width: 100%;
+}
+
+.sizes_size:hover,
+.toppings__topping:hover,
+.toppings__topping--selected {
+  color: #1f8dd6;
+  border-color: #1f8dd6;
+}
+
+.toppings__topping-toggle {
+  margin: 0px auto 5px;
+  display: block;
+}
+
+.toppings__topping--disabled {
+  text-decoration: line-through;
+}
