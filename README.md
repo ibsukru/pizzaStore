@@ -1,4 +1,4 @@
-# pizzaStore 🍕 
+# Pizza store 🍕 
 React pizza store experiment using Redux and Graphql
 
 ## Features 🤘
