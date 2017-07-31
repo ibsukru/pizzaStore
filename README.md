@@ -1,11 +1,21 @@
-# pizzaStore
+# pizzaStore 🍕 
 React pizza store experiment using Redux and Graphql
 
-## Install
-`yarn`
+# Features 🤘
+* React, Apollo & Graphql setup 
+* Css Modules and Service workers by default
 
-## Start
+# Architecture 🏛
+* State as single source of truth
+* All components actions and reducers are pure functions
+
+## How to 🤔
+
+### Install
+`yarn install`
+
+### Start
 `yarn start`
 
-## Build
+### Build
 `yarn build`
