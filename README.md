@@ -1,5 +1,5 @@
 # Pizza store 🍕 
-React pizza store experiment using Redux and Graphql
+Pizza store experiment using React, Redux and Graphql
 
 ## Features 🤘
 * React, Apollo & Graphql setup 
