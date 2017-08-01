@@ -19,9 +19,11 @@
     "eject": "react-scripts eject"
   },
   "devDependencies": {
+    "babel-eslint": "^7.2.3",
     "standard": "^10.0.2"
   },
   "standard": {
+    "parser": "babel-eslint",
     "ignore": [
       "/src/registerServiceWorker.js"
     ]
