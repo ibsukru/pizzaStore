@@ -15,26 +15,25 @@ const Order = ({
     return <Basket basket={basket} />
   }
 
-  const orders = basket && basket.orders
-
-  const basketMarkup =
-    orders &&
-    orders.length > 0 &&
-    <div className='basket-actions'>
-      <a className='basket-actions__toggle' onClick={onToggleBasket}>
-        Go to basket ({orders.length})
-      </a>
-    </div>
-
   if (pizza) {
     return <Toppings pizza={pizza} />
   }
+
+  const orders = basket && basket.orders
 
   return (
     <div>
       <h1>Welcome to your pizza store.</h1>
       <Pizza sizes={pizzaSizes} />
-      {basketMarkup}
+      {
+        orders &&
+        orders.length > 0 &&
+        <div className='basket-actions'>
+          <a className='basket-actions__toggle' onClick={onToggleBasket}>
+            Go to basket ({orders.length})
+          </a>
+        </div>
+      }
     </div>
   )
 }
