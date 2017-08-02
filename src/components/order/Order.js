@@ -3,7 +3,7 @@ import Pizza from '../pizza'
 import Basket from '../basket'
 import Toppings from '../toppings'
 
-const Order = ({
+export default ({
   onToggleBasket,
   basket,
   pizza,
@@ -37,5 +37,3 @@ const Order = ({
     </div>
   )
 }
-
-export default Order

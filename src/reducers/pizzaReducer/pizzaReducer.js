@@ -1,4 +1,4 @@
-const pizzaReducer = (state = null, action) => {
+export default (state = null, action) => {
   if (!action || !action.type) return state
 
   switch (action.type) {
@@ -26,5 +26,3 @@ const pizzaReducer = (state = null, action) => {
       return state
   }
 }
-
-export default pizzaReducer

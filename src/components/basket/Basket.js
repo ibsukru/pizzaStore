@@ -1,7 +1,7 @@
 import React from 'react'
 import { getPrice, getTotalPrice } from '../../helpers'
 
-const Basket = ({ basket, onPay, onToggleBasket, onRemovingOrder }) => {
+export default ({ basket, onPay, onToggleBasket, onRemovingOrder }) => {
   if (basket.completed) {
     return (
       <div>
@@ -57,5 +57,3 @@ const Basket = ({ basket, onPay, onToggleBasket, onRemovingOrder }) => {
     </div>
   )
 }
-
-export default Basket

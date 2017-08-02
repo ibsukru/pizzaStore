@@ -1,4 +1,4 @@
-const basketReducer = (state = { show: false, orders: [] }, action) => {
+export default (state = { show: false, orders: [] }, action) => {
   switch (action.type) {
     case 'BASKET_ADD':
       const size = action.payload
@@ -19,5 +19,3 @@ const basketReducer = (state = { show: false, orders: [] }, action) => {
       return state
   }
 }
-
-export default basketReducer

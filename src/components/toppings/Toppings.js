@@ -5,7 +5,7 @@ import {
   getPrice
 } from '../../helpers'
 
-const Toppings = ({
+export default ({
   history,
   pizza,
   onClearSizeClick,
@@ -77,5 +77,3 @@ const Toppings = ({
     </section>
   )
 }
-
-export default Toppings

@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Pizza = ({ sizes, onSelectingSize }) => (
+export default ({ sizes, onSelectingSize }) => (
   <section>
     <h2>Which size do you like?</h2>
     <div className='sizes'>
@@ -18,5 +18,3 @@ const Pizza = ({ sizes, onSelectingSize }) => (
     </div>
   </section>
 )
-
-export default Pizza
