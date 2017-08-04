@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`With props={"onSelectingSize":null,"sizes":[]}, should map snapshot 1`] = `null`;
+
+exports[`With props={"sizes":[{"name":"a size"}]}, should map snapshot 1`] = `
+<section>
+  <h2>
+    Which size do you like?
+  </h2>
+  <div
+    className="sizes"
+  >
+    <a
+      className="sizes__size"
+      onClick={[Function]}
+    >
+      a size
+    </a>
+  </div>
+</section>
+`;
+
+exports[`With props=null, should map snapshot 1`] = `null`;
