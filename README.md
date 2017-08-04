@@ -22,5 +22,8 @@ Please check the source code
 ### Start
 `yarn start`
 
+### Test
+`yarn test`
+
 ### Build
 `yarn build`
