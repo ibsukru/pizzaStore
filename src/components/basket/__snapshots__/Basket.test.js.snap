@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`With props {"basket":{"orders":[{"name":"some name"}]}} Should match snapshot... 1`] = `
+<div>
+  <h1>
+    Hey here is your basket, these things are yummy!
+  </h1>
+  <ul
+    className="orders"
+  >
+    <li
+      className="orders__order"
+    >
+      some name
+       pizza with
+       costs 
+      1.00
+      $,
+      <div>
+        <a
+          onClick={[Function]}
+        >
+          Remove
+        </a>
+      </div>
+    </li>
+  </ul>
+  <div
+    className="basket-actions"
+  >
+    <a
+      className="basket-actions__pay"
+      onClick={[Function]}
+    >
+      Finish and pay 
+      1.00
+      $
+    </a>
+    <a
+      className="basket-actions__toggle"
+      onClick={[Function]}
+    >
+      Add more...
+    </a>
+  </div>
+</div>
+`;

@@ -1,8 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`With props={"onSelectingSize":null,"sizes":[]}, should map snapshot 1`] = `null`;
+exports[`With props={"sizes":[]}, should match snapshot 1`] = `
+<section>
+  <h2>
+    Which size do you like?
+  </h2>
+  <div
+    className="sizes"
+  />
+</section>
+`;
 
-exports[`With props={"sizes":[{"name":"a size"}]}, should map snapshot 1`] = `
+exports[`With props={"sizes":[{"name":"a size"}]}, should match snapshot 1`] = `
 <section>
   <h2>
     Which size do you like?
@@ -19,5 +28,3 @@ exports[`With props={"sizes":[{"name":"a size"}]}, should map snapshot 1`] = `
   </div>
 </section>
 `;
-
-exports[`With props=null, should map snapshot 1`] = `null`;

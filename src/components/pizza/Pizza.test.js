@@ -1,11 +1,10 @@
 import React from 'react'
-import renderer from 'react-test-renderer'
+import { create } from 'react-test-renderer'
 import Pizza from './Pizza'
 
 [
-  null,
   {
-    onSelectingSize: null,
+    onSelectingSize: f => f,
     sizes: []
   },
   {
@@ -17,7 +16,7 @@ import Pizza from './Pizza'
     ]
   }
 ].forEach(props => {
-  test(`With props=${JSON.stringify(props)}, should map snapshot`, () => {
-    expect(renderer.create(<Pizza {...props} />).toJSON()).toMatchSnapshot()
+  test(`With props=${JSON.stringify(props)}, should match snapshot`, () => {
+    expect(create(<Pizza {...props} />).toJSON()).toMatchSnapshot()
   })
 })

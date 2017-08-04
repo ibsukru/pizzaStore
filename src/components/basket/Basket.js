@@ -1,7 +1,7 @@
 import React from 'react'
-import { getPrice, getTotalPrice } from '../../helpers'
+import PropTypes from 'prop-types'
 
-export default ({ basket, onPay, onToggleBasket, onRemovingOrder }) => {
+const Basket = ({ basket, onPay, onToggleBasket, onRemovingOrder, getPrice, getTotalPrice }) => {
   if (basket.completed) {
     return (
       <div>
@@ -21,7 +21,11 @@ export default ({ basket, onPay, onToggleBasket, onRemovingOrder }) => {
     return (
       <div>
         <h1>
-          Your basket is empty, <a onClick={onToggleBasket}>Here</a> you can add items.
+          Your basket is empty,
+          {' '}
+          <a onClick={onToggleBasket}>Here</a>
+          {' '}
+          you can add items.
         </h1>
       </div>
     )
@@ -57,3 +61,18 @@ export default ({ basket, onPay, onToggleBasket, onRemovingOrder }) => {
     </div>
   )
 }
+
+Basket.propTypes = {
+  basket: PropTypes.shape({
+    orders: PropTypes.arrayOf(
+      PropTypes.shape({
+        name: PropTypes.string.isRequired
+      })
+    )
+  }).isRequired,
+  onPay: PropTypes.func.isRequired,
+  onToggleBasket: PropTypes.func.isRequired,
+  onRemovingOrder: PropTypes.func.isRequired
+}
+
+export default Basket
