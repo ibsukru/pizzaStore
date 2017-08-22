@@ -22,9 +22,7 @@ const Basket = ({ basket, onPay, onToggleBasket, onRemovingOrder, getPrice, getT
       <div>
         <h1>
           Your basket is empty,
-          {' '}
           <a onClick={onToggleBasket}>Here</a>
-          {' '}
           you can add items.
         </h1>
       </div>
